@@ -5,9 +5,9 @@
 }
 
 body {
-    background-color: khaki;
-    font-family: Times New Roman;
+    background-color: #B8860B;
     font-size: 10px;
+    font-family: 'Quicksand', sans-serif;
   }
 
 @media (min-width: 590px){
@@ -15,8 +15,14 @@ body {
       font-size: 15px;
     }
     .menu{
-      height: 55px;
+      height: 116px;
     }
+}
+
+@media (min-width: 630px){
+  .menu{
+    height: 55px;
+  }
 }
 
 @media (min-width: 1000px){
@@ -60,6 +66,7 @@ a {
     text-align: center;
     color:white;
     font-size: 2em;
+    font-family: 'Baloo 2', cursive;
   }
   
 a:hover {
@@ -80,12 +87,45 @@ a:hover {
 .subtitle {
   text-align: center;
   font-size: 2em;
+  font-family: 'Sacramento', cursive;
 }
 .img-lidas {
-    height: 100px;
-    width: 100px;
+    height: 300px;
+    width: 210px;
+    border-radius: 5%;
 }
 
-section{
-  
+.lidas h2{
+  margin-bottom: 1em;
+  font-size: 2.5em;
+}
+
+.lidas {
+  padding: 1.5em;  
+}
+
+.lidas .grid {
+  display: grid;
+  gap: 3em;
+  grid-template-columns: 210px;
+  justify-content: center;
+}
+
+.lidas figcaption{
+  font-size: 2em;
+}
+
+@media (min-width: 565px){
+  .lidas .grid {
+    grid-template-columns: 250px 250px;
+  }
+}
+
+@media (min-width: 780px){
+  .lidas .grid {
+    grid-template-columns: 250px 250px 250px;
+  }
+  .lidas figcaption{
+    font-size: 1.4em;
+  }
 }
