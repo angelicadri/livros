@@ -5,47 +5,89 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Livros</title>
     <link rel="stylesheet" href="CSS/estilos.css">
-    <link href="https://fonts.googleapis.com/css2?family=Baloo+2&family=Quicksand:wght@600&family=Sacramento&display=swap" rel="stylesheet"> rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2&family=Quicksand:wght@600&family=Sacramento&display=swap" rel="stylesheet"> rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e967fcfbf4.js" crossorigin="anonymous"></script> 
 </head>
 <body>
     <header>
         <nav class="menu">
           <ul>
-            <li><a href="#">Obras lidas</a></li>
-            <li><a href="#">Obras preferidas</a></li>
-            <li><a href="#">Obras desejadas</a></li>
+            <li><a href="#lidas">Obras lidas</a></li>
+            <li><a href="#preferidas">Obras preferidas</a></li>
+            <li><a href="#contato">Contato</a></li>
           </ul>
         </nav>
         <div>
           <h1 class="title">MEUS LIVROS</h1>
-          <h2 class="subtitle">by Angélica Drielly</h2>
+          <h2 class="subtitle">por Angélica Drielly</h2>
         </div>
     </header>
-    <section class="lidas">
+    <section id="lidas" class="obras">
       <h2>Obras lidas</h2>
       <div class="grid">
         <figure>
-          <img class="img-lidas" src='./img/capitaes.jpeg' alt="Livro Capitães da areia">
+          <img class="img-obras" src='./img/capitaes.jpeg' alt="Livro Capitães da areia">
           <figcaption>Capitães da Areia, de Jorge Amado</figcaption>
         </figure>
         <figure>
-          <img class="img-lidas" src='./img/astrofisica.jpeg' alt="Livro Astrofísica para apressados">
+          <img class="img-obras" src='./img/astrofisica.jpeg' alt="Livro Astrofísica para apressados">
           <figcaption>Astrofísica para apressados, de Neil Tyson</figcaption>
         </figure>
         <figure>
-          <img class="img-lidas" src='./img/malala.jpeg' alt="Livro Eu sou Malala">
+          <img class="img-obras" src='./img/malala.jpeg' alt="Livro Eu sou Malala">
           <figcaption>Eu sou Malala, de Malala Yousafzai</figcaption>
         </figure>
         <figure>
-          <img class="img-lidas" src='./img/alem.png' alt="Livro Além do bem e do mal">
+          <img class="img-obras" src='./img/alem.png' alt="Livro Além do bem e do mal">
           <figcaption>Além do bem e do mal, de Friedrich Nietzsche</figcaption>
         </figure>
         <figure>
-          <img class="img-lidas" src='./img/apocalipse.png' alt="Livro A batalha do apocalipse">
+          <img class="img-obras" src='./img/apocalipse.png' alt="Livro A batalha do apocalipse">
           <figcaption>A batalha do apocalipse, de Eduardo Spohr</figcaption>
         </figure>
+      </div> 
+    </section>
+    <section id="preferidas" class="obras">
+      <h2>Obras preferidas</h2>
+      <div class="grid">
+        <figure>
+          <img class="img-obras" src='./img/fahrenheit.png' alt="Livro Fahrenheit 451">
+          <figcaption>Fahrenheit 451, de Ray Bradbury</figcaption>
+        </figure>
+        <figure>
+          <img class="img-obras" src='./img/retorno.png' alt="Livro O retorno do rei">
+          <figcaption>O retorno do rei, de Tolkien</figcaption>
+        </figure>
+        <figure>
+          <img class="img-obras" src='./img/1984.jpeg' alt="Livro 1984">
+          <figcaption>1984, de George Orwell</figcaption>
+        </figure>
+        <figure>
+          <img class="img-obras" src='./img/purpura.png' alt="Livro A cor púrpura">
+          <figcaption>A cor púrpura, de Alice Walker</figcaption>
+        </figure>
+        <figure>
+          <img class="img-obras" src='./img/vermelho.jpeg' alt="Livro O vermelho e o negro">
+          <figcaption>O vermelho e o negro, de Stendhal</figcaption>
+        </figure>
+      </div> 
+    </section>
+    <section id="contato" class="contato">
+      <h2>Contato</h2>
+      <div class="icons">
+        <a target="_blank" href="https://github.com/angelicadri">
+          <i class="fab fa-github"></i>
+          Github
+        </a>
+        <a target="_blank" href="https://www.linkedin.com/in/ang%C3%A9lica-quadros-034b761a7/">
+          <i class="fab fa-linkedin-in"></i>
+          Linkedin
+        </a>
+        <a href="mailto:adsq04@hotmail.com">
+          <i class="far fa-envelope"></i>
+          email
+        </a>
       </div>
-      
     </section>
 </body>
 </html>

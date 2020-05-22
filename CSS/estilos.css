@@ -5,7 +5,6 @@
 }
 
 body {
-    background-color: #B8860B;
     font-size: 10px;
     font-family: 'Quicksand', sans-serif;
   }
@@ -14,15 +13,6 @@ body {
     body{
       font-size: 15px;
     }
-    .menu{
-      height: 116px;
-    }
-}
-
-@media (min-width: 630px){
-  .menu{
-    height: 55px;
-  }
 }
 
 @media (min-width: 1000px){
@@ -33,7 +23,6 @@ body {
     height: 67px;
   }
 }
-
 
 header {
     align-items: center;
@@ -48,7 +37,6 @@ header {
     background-color: khaki;
     position: fixed;
     width: 100vw;
-    
     top: 0;
   }
   
@@ -59,6 +47,7 @@ header {
 .menu a {
     display: block;
     padding: 10px 10px;
+    padding-top: 5px;
 }
   
 a {
@@ -70,62 +59,109 @@ a {
   }
   
 a:hover {
-    font-weight: bold;
+    transform: scale(1.2);
+    transition: 300ms;
   }
   
 .menu ul {
     display: flex;
     justify-content: space-around;
   }
-  
+
 .title {
     text-align: center;
     font-size: 5em;
     font-weight: bold;
   }
+
+.title {
+  
+  animation: linear 2s animaTitulo fowards;
+}
+  
+@keyframes animaTitulo {
+  from{
+    transform: scale(0.2);
+    opacity: 0;
+
+  }
+  to{
+    transform: scale(1.2);
+    opacity: 1;
+  }
+}
+  
   
 .subtitle {
-  text-align: center;
+  text-align: end;
   font-size: 2em;
   font-family: 'Sacramento', cursive;
 }
-.img-lidas {
+.img-obras {
     height: 300px;
     width: 210px;
     border-radius: 5%;
 }
 
-.lidas h2{
-  margin-bottom: 1em;
-  font-size: 2.5em;
+.img-obras:hover{
+  opacity: 0.8;
+  transition: 300ms;
 }
 
-.lidas {
+section{
+  background-color: #B8860B;
+}
+
+.obras h2, .contato h2{
+  margin-bottom: 1em;
+  font-size: 2.8em;
+  padding-top: 60px;
+}
+
+.obras, .contato {
   padding: 1.5em;  
 }
 
-.lidas .grid {
+.obras .grid {
   display: grid;
   gap: 3em;
   grid-template-columns: 210px;
   justify-content: center;
 }
 
-.lidas figcaption{
+.obras figcaption{
   font-size: 2em;
 }
 
 @media (min-width: 565px){
-  .lidas .grid {
+  .obras .grid {
     grid-template-columns: 250px 250px;
   }
 }
 
 @media (min-width: 780px){
-  .lidas .grid {
+  .obras .grid {
     grid-template-columns: 250px 250px 250px;
   }
-  .lidas figcaption{
+  .obras figcaption{
     font-size: 1.4em;
   }
+}
+
+.contato a{
+  font-size: 2.5em;
+}
+
+.contato .icons{
+  display: grid;
+  gap: 1.8em;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 70px;
+}
+
+.contato a:hover{
+  text-decoration: none;
+  font-weight: normal;
+  text-shadow: 0 0 15px black;
 }
